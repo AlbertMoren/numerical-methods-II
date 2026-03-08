@@ -60,5 +60,5 @@ streamlit run frontend/app.py
 
 ### Módulo 1: Derivação Numérica
 - [x] Derivada de 1ª Ordem (Métodos: Forward, Backward e Central)
-- [ ] Derivada de 2ª Ordem
-- [ ] Derivada de 3ª Ordem
+- [x] Derivada de 2ª Ordem
+- [x] Derivada de 3ª Ordem
