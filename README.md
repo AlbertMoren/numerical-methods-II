@@ -1,5 +1,4 @@
-# Métodos Numéricos II - Calculadora
-
+# Métodos Numéricos II
 Este projeto é uma implementação em Python de diversos algoritmos abordados na disciplina de Métodos Numéricos 2. A arquitetura foi desenhada separando a lógica de negócio (Back-end) da interface de usuário (Front-end), permitindo cálculos rápidos e uma visualização amigável.
 
 ##  Tecnologias Utilizadas
