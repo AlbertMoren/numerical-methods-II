@@ -53,7 +53,7 @@ elif st.session_state.tela_atual == "Derivada":
             st.markdown(r"$$f'(x) \approx \frac{f(x) - f(x - \Delta x)}{\Delta x}$$")
         if metodo_input == "central":
             st.markdown(r"$$f'(x) \approx \frac{f(x + \Delta x) - f(x - \Delta x)}{2 \Delta x}$$")
-            
+
     elif ordem_input == 2:
         st.markdown("---")
         st.markdown("**Fórmula Utilizada**")
@@ -63,7 +63,16 @@ elif st.session_state.tela_atual == "Derivada":
             st.markdown(r"$$f''(x) \approx \frac{f(x) - 2f(x - \Delta x) + f(x - 2\Delta x)}{(\Delta x)^2}$$")
         if metodo_input == "central":
             st.markdown(r"$$f''(x) \approx \frac{f(x + \Delta x) - 2f(x) + f(x - \Delta x)}{(\Delta x)^2}$$")
-
+    
+    elif ordem_input == 3:
+        st.markdown("---")
+        st.markdown("**Fórmula Utilizada**")
+        if metodo_input == "forward":
+            st.markdown(r"$$f'''(x) \approx \frac{f(x + 3\Delta x) - 3f(x + 2\Delta x) + 3f(x + \Delta x) - f(x)}{(\Delta x)^3}$$")
+        elif metodo_input == "backward":
+            st.markdown(r"$$f'''(x) \approx \frac{f(x) - 3f(x - \Delta x) + 3f(x - 2\Delta x) - f(x - 3\Delta x)}{(\Delta x)^3}$$")
+        elif metodo_input == "central":
+            st.markdown(r"$$f'''(x) \approx \frac{f(x + 2\Delta x) - 2f(x + \Delta x) + 2f(x - \Delta x) - f(x - 2\Delta x)}{2(\Delta x)^3}$$")
 
 
     if st.button("Calcular", type="primary"):
