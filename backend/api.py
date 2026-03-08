@@ -7,7 +7,7 @@ app = FastAPI()
 @app.post("/derivar")
 def calcular_derivada(req: DerivativeRequest):
     if req.ordem == 1:
-        calculadora = DerivadaPrimeira(req.funcao,req.x,req.h)
+        calculadora = DerivadaPrimeira(req.funcao, req.x, req.deltaX)
 
         if req.metodo == "forward":
             resultado = calculadora.calcular_forward()
