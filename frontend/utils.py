@@ -3,6 +3,7 @@ import math
 
 def traduzir_para_python(expressao: str) -> str:
     expr = expressao.replace(" ", "")
+    expr = re.sub(r'(\d)([a-zA-Z\(])', r'\1*\2', expr)
     expr = expr.replace("^","**")
     expr = expr.replace("π", "math.pi")
     expr = expr.replace("pi", "math.pi")

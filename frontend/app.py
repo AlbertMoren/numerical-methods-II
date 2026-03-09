@@ -1,7 +1,7 @@
 import streamlit as st
 from views.derivada_view import renderizar_tela_derivada
 
-st.set_page_config(page_title="Métodos Numéricos II", layout="centered")
+st.set_page_config(page_title="Métodos Numéricos II", layout="wide")
 
 
 if "expressao_usuario" not in st.session_state:

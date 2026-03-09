@@ -1,3 +1,5 @@
 venv
 backend/__pycache__
 backend/metodos/__pycache__
+frontend/__pycache__
+frontend/views/__pycache__
